@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <!-- Bootstrap links-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <style>
+    div.container {
+      background-color: #1F2833;
+    }
+
+    div.container p {
+      font-family: Arial;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: none;
+      text-transform: none;
+      color: #c5c6c7ce;
+    }
+
+    .colorTemp {
+      float: center;
+      height: 300px;
+      width: 500px;
+    }
+
+    table.temperatureTable {
+      width: 60%;
+      margin-right: auto;
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+      padding: 20px;
+      background-color: #1f2833;
+      border-collapse: collapse;
+      border-width: 2px;
+      border-color: #66fcf1;
+      border-style: solid;
+      color: #c5c6c7;
+    }
+
+    table.temperatureTable td,
+    table.temperatureTable th {
+      border-width: 2px;
+      border-color: #66fcf1;
+      border-style: solid;
+      padding: 3px;
+    }
+
+    table.temperatureTable thead {
+      background-color: #66fcf1;
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0B0C10;">
+        <a class="navbar-brand" style="color: #66fcf1;">Light Bulbs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color: #66fcf1;">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="color: #66fcf1;">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="cfl.html">CFL</a>
+                <a class="dropdown-item" href="led.html">LED</a>
+                <a class="dropdown-item" href="Incandescent.html">Incandescent</a>
+              </div>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="subscribe.html" style="color: #66fcf1;"> Subscribe <span
+                  class="sr-only">(current)</span></a>
+            </li>
+
+          </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main role="main">
+    <br> <br> <br> <br> <br>
+    <div class="col-md-auto">
+      <div class="text-center">
+      </div>
+    </div>
+    <div class="container">
+      <br><br>
+      <div class="container">
+        <img alt="#" src="Img\package_label.png" style="float:right; height:500px; width:400px" />
+
+        <h1 class="text-left">Watts</h1>
+        <div class="row justify-content-left">
+          <div class="col-md-auto">
+            <p class="text-left" style="font-size:16px">A watt is a unit of power which is energy consumption divided by
+              time</p>
+          </div>
+        </div> <br> <br>
+
+        <h1 class="text-left">Lumens</h1>
+        <div class="row justify-content-left">
+          <div class="col-md-auto">
+            <p class="text-left" style="font-size:16px"> Lumens are a measure of brightness, more lumens translates to
+              more brightness </p>
+          </div>
+        </div><br><br>
+
+        <h1 class="text-left">Lumens Per Watt(lm/W)</h1>
+        <div class="row justify-content-left">
+          <div class="col-md-auto">
+            <p class="text-left" style="font-size:16px"> refers to the energy efficiency of lighting: how much visible
+              light you get for a given amount of electricity. </p>
+          </div>
+        </div>
+
+        <br> <br> <br> <br> <br>
+        <h1 class="text-left">Color Temperature</h1>
+        <div class="row justify-content-left">
+          <div class="col-md-auto">
+            <p class="text-left" style="font-size:16px"> Color temperature is a way to describe the light appearance
+              provided by a light bulb. It is measured in degrees of Kelvin (K) on a scale from 1,000 to 10,000.
+              Typically, Kelvin temperatures for home lighting fall somewhere on a scale from 2000K to 6500K </p>
+          </div>
+        </div>
+        <div class="colorTemp">
+          <img alt="#" src="Img\colortemp.png" />
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <table class="temperatureTable">
+          <thead>
+            <tr>
+              <th style="color: #0B0C10;">Light Source</th>
+              <th style="color: #0B0C10;">Color Temperature</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Halogen lamp</td>
+              <td>3000K</td>
+            </tr>
+            <tr>
+              <td>Incandescent lamp </td>
+              <td>2800K</td>
+            </tr>
+            <tr>
+              <td>CFL</td>
+              <td>6000-6500K</td>
+            <tr>
+              <td>Tungsten lamp</td>
+              <td>2700K</td>
+            </tr>
+            <tr>
+              <td>Candle light</td>
+              <td>2000K</td>
+            </tr>
+            <tr>
+              <td>Fluorescent lamp</td>
+              <td>2500K-5000K</td>
+            <tr>
+              <td>High pressure sodium lamp</td>
+              <td>1950K-2250K</td>
+            </tr>
+            <tr>
+              <td>High-pressure mercury lamp</td>
+              <td>3450K-3750K</td>
+            </tr>
+            <tr>
+              <td>Metal halide lamp</td>
+              <td>4000K-4600K</td>
+            <tr>
+              <td>Clear sky</td>
+              <td>8000-8500K</td>
+            </tr>
+            <tr>
+              <td>Cloudy day</td>
+              <td>6500-7500K</td>
+            </tr>
+            <tr>
+              <td>Summer noon sun</td>
+              <td>5500K</td>
+            </tr>
+            <tr>
+              <td>Afternoon daylight</td>
+              <td>4000K</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <br> <br> <br> <br> <br>
+</body>
+
+</html>
